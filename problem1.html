@@ -1,0 +1,7 @@
+<script>
+function minMaxVal(arr) {
+    const sum = arr.reduce((result, item) =>  result + item)
+    return [sum - Math.max(...arr), sum - Math.min(...arr)]
+}
+console.log(...minMaxVal([1,2,3,4,5]))
+</script>

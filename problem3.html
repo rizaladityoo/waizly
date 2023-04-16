@@ -1,0 +1,16 @@
+<script>
+    function convertTime(time) {
+        if(time.slice(-2)=='PM'){
+            time = time.slice(0,-2)
+            time = time.split(':')
+            if (time[0]!=='12') time[0] = Number(time[0])+12
+            return time.join(':')
+        }
+        else{
+            time = time.split(':')
+            if (time[0]=='12') time[0] = Number(time[0])-12
+            return time.join(':')
+        }
+    }
+    console.log(convertTime('12:01:00AM'));
+</script>

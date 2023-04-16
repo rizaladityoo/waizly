@@ -1,0 +1,20 @@
+<script>
+    function plusMinus(arr){
+        let positiveNumber = negativeNumber = 0
+        arr.forEach((num) => {
+        if (num > 0)
+            positiveNumber++
+        if (num < 0)
+            negativeNumber++
+        });
+        return [positiveNumber, negativeNumber]
+    }
+    let arr = [-4, 3, -9, 0, 4, 1]
+    let res = plusMinus(arr)
+    let posNumber = (res[0]/arr.length).toFixed(6)
+    let negNumber = (res[1]/arr.length).toFixed(6)
+    
+    console.log(posNumber)
+    console.log(negNumber)
+    console.log(1-(parseFloat(posNumber)+parseFloat(negNumber)))
+</script>
