@@ -1,6 +1,7 @@
 const express = require("express")
 const app = express()
 const dotenv = require('dotenv').config();
+const logger = require('./config/logger');
 
 const db  = require("./config/db")
 const userRouter = require('./routes/userRouter')
@@ -13,9 +14,9 @@ app.use(userRouter)
 app.use(loginRouter)
 
 db.authenticate().then(() => 
-    console.log("Connected to DB")
+    logger.info('Connected to DB')
 ).catch(err => {
-    console.error("Unable to connect to the database:", err)
+    logger.error("Unable to connect to the database:", err)
 })
 
-app.listen(process.env.PORT, ()=> console.log("running at port 3000"))
+app.listen(process.env.PORT, ()=> logger.info('running at port 3000'))

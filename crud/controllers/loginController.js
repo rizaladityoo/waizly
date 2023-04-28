@@ -30,7 +30,7 @@ const login = async(req,res)=> {
         const accessToken = jwt.sign(JSON.stringify(user), process.env.TOKEN_SECRET)
         res.json({ accessToken: accessToken });
     } catch (error) {
-        console.log(error)
+        logger.error("Login error:", err)
     }
 }
 

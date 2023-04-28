@@ -6,7 +6,7 @@ const getAllUser = async(req, res) => {
         const getAllUser = await User.findAll({})
         res.json(getAllUser)
     } catch (error) {
-        console.error(error.message)
+        logger.error("Unable to getAllUser:", error.message)
         res.status(400).send(error)
     }
 }
@@ -18,13 +18,9 @@ const createUser = async(req, res) => {
             email: email,
             password: bcrypt.hashSync(password, 10),
           });
-        // const newUser = new User({
-        //     username, email, password
-        // })
-        // await newUser.save()
         res.json(user)
     }catch(error){
-        console.error(error.message)
+        logger.error("Unable to createUser:", error.message)
         res.status(400).send(error)
     }
 }
@@ -37,7 +33,7 @@ const editUser = async(req,res)=>{
         })
         res.json("updated")
     } catch (error) {
-        console.error(error.message)
+        logger.error("Unable to editUser:", error.message)
         res.status(400).send(error)
     }
 }
@@ -49,7 +45,7 @@ const deleteUser = async(req,res)=>{
         })
         res.json("delete success")
     } catch (error) {
-        console.error(error.message)
+        logger.error("Unable to deleteUser:", error.message)
         res.status(400).send(error)
     }
 }
