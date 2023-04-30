@@ -5,10 +5,13 @@ const customFormat = format.combine(format.timestamp(), format.printf((info) => 
 }))
 
 const logger = createLogger({
+  handleExceptions: true, 
+  handleRejections: true,
   format: customFormat,
   transports: [
-    new transports.Console({level: 'silly'}),
-    new transports.File({ filename: 'app.log', level: 'info'})
+    new transports.Console({level: 'info'}),
+    new transports.File({ filename: 'app.log', level: 'info', handleExceptions: true, handleRejections: true}),
+    new transports.File({ filename: 'app.log', level: 'err', handleExceptions: true, handleRejections: true})
   ]
 });
 
