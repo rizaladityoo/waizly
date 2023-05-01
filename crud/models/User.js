@@ -1,16 +1,32 @@
-const { Sequelize } = require("sequelize");
+const { DataTypes} = require('sequelize');
 const db = require("../config/db")
-const bcrypt = require("bcrypt");
-const User = db.define(
-    "user",
+
+const user = db.define(
+    'user',
     {
-        username: {type: Sequelize.STRING},
-        email: {type: Sequelize.STRING},
-        password: {type: Sequelize.STRING}
+        id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
+        email: {type: DataTypes.STRING},
+        password: {type: DataTypes.STRING},
+        roleId: {
+            type: DataTypes.INTEGER,
+            references: {
+              model: 'role',
+              key: 'id'
+            }
+        }
     },
     {
         freezeTableName: true,
     }
 );
 
-module.exports = User;
+// user.belongsTo(db.role, {
+//     foreignKey: 'roleId',
+//     as: 'role'
+// })
+
+// role.hasMany(db.User, {
+//     foreignKey: 'id_role',
+//     as: 'role'
+// })
+module.exports = user

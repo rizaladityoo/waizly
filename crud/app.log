@@ -1,33 +1,6 @@
-2023-04-30T10:45:19.970Z [INFO   ]: running at port 3000
-2023-04-30T10:45:55.611Z [INFO   ]: running at port 3000
-2023-04-30T10:45:55.659Z [ERROR  ]: Unable to connect to the database:  connect ECONNREFUSED 127.0.0.1:3306
-2023-04-30T10:45:55.689Z [ERROR  ]: unhandledRejection: connect ECONNREFUSED 127.0.0.1:3306
-SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
-    at ConnectionManager.connect (C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ConnectionManager._connect (C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
-    at async C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
-2023-04-30T10:46:39.673Z [INFO   ]: running at port 3000
-2023-04-30T10:46:39.720Z [ERROR  ]: Unable to connect to the database:  connect ECONNREFUSED 127.0.0.1:3306
-2023-04-30T10:46:39.751Z [ERROR  ]: unhandledRejection: connect ECONNREFUSED 127.0.0.1:3306
-SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
-    at ConnectionManager.connect (C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ConnectionManager._connect (C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
-    at async C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
-2023-04-30T10:47:11.396Z [INFO   ]: running at port 3000
-2023-04-30T10:47:11.443Z [ERROR  ]: Unable to connect to the database:  connect ECONNREFUSED 127.0.0.1:3306
-2023-04-30T10:47:11.475Z [ERROR  ]: unhandledRejection: connect ECONNREFUSED 127.0.0.1:3306
-SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
-    at ConnectionManager.connect (C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ConnectionManager._connect (C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
-    at async C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
-2023-04-30T10:47:57.659Z [INFO   ]: running at port 3000
-2023-04-30T10:47:57.748Z [ERROR  ]: Unable to connect to the database:  connect ECONNREFUSED 127.0.0.1:3306
-2023-04-30T10:47:57.793Z [ERROR  ]: unhandledRejection: connect ECONNREFUSED 127.0.0.1:3306
-SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
-    at ConnectionManager.connect (C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:92:17)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-    at async ConnectionManager._connect (C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:222:24)
-    at async C:\adit\github\waizly\crud\node_modules\sequelize\lib\dialects\abstract\connection-manager.js:174:32
+2023-05-01T22:31:21.404Z [INFO   ]: running at port 3000
+2023-05-01T22:31:21.485Z [INFO   ]: Connected to DB
+2023-05-01T22:31:39.617Z [INFO   ]: running at port 3000
+2023-05-01T22:31:39.730Z [INFO   ]: Connected to DB
+2023-05-01T22:31:55.284Z [INFO   ]: running at port 3000
+2023-05-01T22:31:55.391Z [INFO   ]: Connected to DB
