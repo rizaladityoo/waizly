@@ -3,9 +3,10 @@ const roleController = require('../controllers/roleController');
 
 const { Router } = require('express');
 const router = Router();
+const auth = require('../middleware/auth')
 
 router.get('/user', userController.getAllUser)
-router.post('/user', userController.createUser)
+router.post('/user', auth, userController.createUser)
 router.put('/user/:id', userController.editUser)
 router.delete('/user/:id', userController.deleteUser)
 

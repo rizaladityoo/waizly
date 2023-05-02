@@ -32,7 +32,7 @@ const editUser = async(req,res)=>{
         const{ email, password } = req.body
         const id = req.params.id
         await user.update({
-            username, email, password
+            email, password
         })
         res.json("updated")
     } catch (error) {
